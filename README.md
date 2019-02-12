@@ -1,2 +1,2 @@
 # University
-A place to store all my university assignments and projects.
+A place to store my stuff as I journey through the world of programming
