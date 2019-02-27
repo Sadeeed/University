@@ -5,8 +5,9 @@ int main(void)
     int x , y=0,prime=0,z;
     for (x=1;x<=100;x++)
     {
-        prime = x % 2;
-        if (prime == 1)
+        prime = x % 3;
+        y = x % 2;
+        if (prime != 0 && y == 1)
         {
         //y = x;
         //z = 2 * y/2;
