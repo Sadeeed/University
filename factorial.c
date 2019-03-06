@@ -10,6 +10,6 @@ int main(void)
     {
       factorial= factorial * x; 
     }
-    printf("The factorial of %d is %0.0f \n",number,factorial);
+    printf("The factorial of %d is %f \n",number,factorial);
 return 0;
 }
