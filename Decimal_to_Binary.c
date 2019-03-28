@@ -12,9 +12,16 @@ Algorithm to convert Decimal to Binary number
 #include <math.h>
 int main(void)
 {
-    int decimal = 0 , binary = 0 , i = 0 ,x=2;
-    printf ("Enter a decimal number\n");
+    int decimal = 0 , binary = 0 , quo ,x;
+    printf ("Enter a decimal number : ");
     scanf("%d" , &decimal);
+    quo = decimal;
+    for (x = 1 ; quo != 0 ; x++)
+    {
+        printf ("%d",quo % 2);
+        quo = quo / 2;
+    }
+    printf ("\n");
     
     return 0;
 }
