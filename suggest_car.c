@@ -1,6 +1,15 @@
 #include <stdio.h>
 
+int suggest();
+
 int main()
+{
+    suggest();
+
+    return 0;
+}
+
+int suggest()
 {
     int ammount , cust_type;
     printf("Enter your range: ");
