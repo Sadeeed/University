@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c684c16b-c07f-4995-8e17-dd554262e6c3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XwgvUAHeiVsdibPJNmGjJDa8XI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AccountTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="demo.AccountTest" />
+      <module name="Assignment1_FA18-BCE-032_B" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c684c16b-c07f-4995-8e17-dd554262e6c3" name="Default Changelist" comment="" />
+      <created>1581962801724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581962801724</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581963174413">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state x="0" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.22.1680.1028@0.22.1680.1028" timestamp="1581963174413" />
+    <state width="1634" height="106" key="GridCell.Tab.0.bottom" timestamp="1581965255365">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state width="1634" height="106" key="GridCell.Tab.0.bottom/0.22.1680.1028@0.22.1680.1028" timestamp="1581965255365" />
+    <state width="1634" height="106" key="GridCell.Tab.0.center" timestamp="1581965255364">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state width="1634" height="106" key="GridCell.Tab.0.center/0.22.1680.1028@0.22.1680.1028" timestamp="1581965255364" />
+    <state width="1634" height="106" key="GridCell.Tab.0.left" timestamp="1581965255363">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state width="1634" height="106" key="GridCell.Tab.0.left/0.22.1680.1028@0.22.1680.1028" timestamp="1581965255363" />
+    <state width="1634" height="106" key="GridCell.Tab.0.right" timestamp="1581965255365">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state width="1634" height="106" key="GridCell.Tab.0.right/0.22.1680.1028@0.22.1680.1028" timestamp="1581965255365" />
+    <state x="533" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1581965336539">
+      <screen x="0" y="22" width="1680" height="1028" />
+    </state>
+    <state x="533" y="366" key="com.intellij.ide.util.TipDialog/0.22.1680.1028@0.22.1680.1028" timestamp="1581965336539" />
+  </component>
+</project>
