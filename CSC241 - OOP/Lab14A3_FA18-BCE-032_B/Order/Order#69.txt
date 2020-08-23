@@ -1,0 +1,7 @@
+ID		Name								Price		    Qty		Type
+002		Ryzen 7 3700X                 		37600.000		03		Hardware
+006		Minecraft                     		3500.000		03		Software
+009		Aseprite                      		1250.000		02		Software
+Total Bill: 125800
+Username: Sadeed
+Address: 201

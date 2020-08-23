@@ -1,0 +1,5 @@
+001		GTX 2070                      		48700.000		05		Hardware
+002		Ryzen 7 3700X                 		37600.000		05		Hardware
+003		Samsung 970 Evo               		15600.000		05		Hardware
+004		Logitech G550 Mouse           		11300.000		05		Hardware
+005		Gigabyte GA-A320M Motherboard 		12500.000		05		Hardware

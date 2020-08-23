@@ -1,0 +1,5 @@
+006		Minecraft                     		3500.000		05		Software
+007		Windows 10                    		15000.000		05		Software
+008		WinRar                        		2000.000		05		Software
+009		Aseprite                      		1250.000		05		Software
+010		Malwarebytes                  		5600.000		05		Software
