@@ -1,0 +1,35 @@
+/* 
+background-color: #C4C4C4
+ */
+
+.header{
+    /* background: #C4C4C4; */
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    width: auto;
+    border: 1px solid black;
+}
+
+.links{
+    display: flex;
+}
+
+.links ul{
+    list-style-type: none;
+}
+
+.links li{
+    display: inline;
+    padding: 14px;
+}
+
+.links a{
+    text-decoration: none;
+    /* padding-left: 100px; */
+}
+
+.features{
+    background-color: #544E4D
+}
