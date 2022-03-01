@@ -15,7 +15,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Toggle button -->
@@ -55,12 +55,7 @@
 
 
       <!-- Right elements -->
-      <div class="d-flex align-items-center">
-        <!-- Icon -->
-        <a class="text-reset me-3" href="#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-
+      <div class="d-flex align-items-center px-3">
 
         <span class="px-3"><b>Emily</b> Smith</span>
         <!-- Avatar -->
@@ -94,14 +89,16 @@
       <div class="boxHeader">When the unthinkable happens, this is the car that gets them home, alive.</div>
       <div class="boxText">Seven teenage drivers die every day in car accidents. Our mission is simple: We’re here to
         fix it.</div>
-      <button class="buttonGrey">Get Started</button>
+      <div class="buttonBox">
+        <button class="buttonGrey">Get Started</button>
+      </div>
     </div>
   </div>
 
   <!-- Features Section -->
-  <!-- <div class="features">
+  <div class="features">
     <div class="feature-heading">
-      <h1>Features</h1>
+      <p>Features</p>
     </div>
     <div class="featureCards">
       <div class="feature-card">
@@ -126,7 +123,7 @@
 
       <div class="feature-card">
         <div class="imageBg">
-          <img src="static/img/book.svg" alt="">
+          <img src="static/img/search.svg" alt="">
         </div>
         <div class="card-text">Find It</div>
         <div class="card-text-paragraph">
@@ -146,7 +143,78 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- Save Lives Section -->
+  <div class="saveLives">
+    <div class="text1">
+      <p class="one">Our Mission</p>
+      <p class="two">Save teen lives</p>
+    </div>
+    <div class="text2">
+      <p class="three">Our Promise</p>
+      <p class="four">Safe car selections for every budget</p>
+    </div>
+    <div class="gril"></div>
+    <div class="bigger-text">
+      <div class="bigger-text-left">
+        <p>
+          The number one cause of death for American teens is auto accidents.
+          Also, accidents send 285,000 teens to the hospital each year. These
+          statistics haven't changed in over ten years, despite a steady
+          decline in overall traffic fatalities and changes to state licensing
+          laws.<br /> <p  style="font-weight: 400;"><b>Why is that?</b></p> Simply put, we are putting teens in cars that are
+          too old and ill-equipped to protect them. Studies conducted by The
+          Insurance Institute for Highway Safety have proven this fact. The
+          problem is that parents unknowingly put the worst driver in the
+          family in the most out-dated, inadequate vehicle in the family
+          fleet. It's time to lose the "put the kid in the jalopy because they
+          will wreck it" mentality.
+        </p>
+      </div>
+      <div class="bigger-text-right">
+        <p>
+          Today's cars are the safest, strongest vehicles ever built and come
+          equipped with tools to keep inexperienced drivers out of trouble. 
+          Some even come equipped with tools to help you monitor and coach 
+          your teen driver. You have many options as a parent, but it can be
+          confusing to navigate the hundreds of combinations of feature names
+          , model changes, and prices. <br><br>
+          Our mission is to educate all parents about the statistics facing 
+          teen drivers, explain car features designed to protect them, and match
+          the safest cars to your child and your budget. While no car can guarantee
+          a fatality will not occur, you will sleep better at night knowing you have
+          made a wise choice and done everything you can to protect your family from
+          the unthinkable. That's our promise.
+        </p>
+      </div>
+    </div>  
+  </div>
+
+<!-- Match Me Section -->
+  <div class="matchMe">
+    <h2 class="matchMeHeading">Let's match the car to your kid<br> and your budget</h2>
+    <div class="matchMeParent">
+      <div class="matchMeLeft">
+        <h1  class="matchMeLeftHeading ">Don’t know what to look for? No problem.</h1>
+        <p class="matchMeLeftText ">Simply enter your budget, your zipcode, and select the safety 
+          criteria the car has to have for your child, and we’ll show you the matches. <br /><br>
+  
+          Then our algorithm will rank your selections based on our own safety ranking formula linking over fifteen different datapoints. <br /><br>
+        
+          Save cars in your garage to evaluate anytime you want.</p>
+          <div class="buttonBoxMatchMe">
+            <button type="button" class="buttonGrey">
+              Match Me
+            </button> 
+          </div>
+      </div>
+  
+      <div>
+        <img class="matchMeRight" src="static/img/comp1.png" alt="">
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -1,48 +1,90 @@
-/* 
-background-color: #C4C4C4
+/*
+Sadeed Waseem
+FA18-BCE-032
+March 2, 2022
  */
 
-.header {
-  /* background: #C4C4C4; */
-  display: flex;
-  /* justify-content: center; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  width: auto;
-  border: 1px solid black;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+/* Main Page (ulti gari wala) */
+.mainPage {
+  position: relative;
+  height: 703px;
+  background-color: #f7f6f3;
 }
 
-.links {
-  display: flex;
+.carImage {
+  position: absolute;
+  width: 859.54px;
+  height: 611.06px;
+  left: 535.46px;
+  top: 43.7px;
+
+  background: url(static/img/shutterstock_1721657422\ 1.png);
+  border-radius: 10px;
 }
 
-.links ul {
-  list-style-type: none;
+.infoBox {
+  position: absolute;
+  width: 524px;
+  height: 431px;
+  left: 93px;
+  top: 103px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  padding-left: 47px;
 }
 
-.links li {
-  display: inline;
-  padding: 14px;
+.boxHeader {
+  font-weight: 600;
+  font-size: 28px;
+  /* align-items: center; */
+  padding-right: 39px;
+  padding-top: 51px;
 }
 
-.links a {
+.boxText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #767676;
+  padding-top: 20px;
+  padding-right: 95px;
+}
+
+.buttonBox {
+  padding-top: 68px;
+  padding-bottom: 64px;
+}
+
+.buttonGrey {
+  background-color: #544e4d;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 28px;
+  text-align: center;
   text-decoration: none;
-  /* padding-left: 100px; */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /* Features Section */
 .features {
   background-color: #544e4d;
   text-align: center;
-  height: 600px;
+  height: 620px;
+  position: relative;
 }
 
 .feature-heading {
-  position: relative;
   color: white;
-  text-align: center;
-  padding: 20px 0px 10px 0px;
-  top: 15px;
+  padding: 106px 0px 10px 0px;
+  font-size: 27px;
+  font-weight: 600;
 }
 
 .featureCards {
@@ -62,7 +104,7 @@ background-color: #C4C4C4
 }
 
 .imageBg {
-  background-color: aqua;
+  background-color: #f19961;
   border-radius: 50%;
   height: 88px;
   width: 88px;
@@ -82,64 +124,163 @@ background-color: #C4C4C4
   font-size: 13px;
 }
 
-/* Main Page (ulti gari wala) */
-.mainPage {
-  position: absolute;
-  height: 650px;
-  background-color: #f7f6f3;
+/* Save Lives Section */
+.saveLives {
+  background-color: #ebdfcd;
+  position: relative;
+  height: 887px;
 }
 
-.carImage {
+.gril {
   position: absolute;
-  width: 859.54px;
-  height: 611.06px;
-  left: 535.46px;
-  top: 128.77px;
+  width: 699px;
+  height: 403px;
+  left: 655px;
+  top: 0;
 
-  background: url(static/img/shutterstock_1721657422\ 1.png);
-  border-radius: 10px;
+  background: url(static/img/gril.png);
 }
 
-.infoBox {
-  position: absolute;
-  width: 524px;
-  height: 431px;
-  left: 93px;
-  top: 188px;
-
-  background: #ffffff;
-  border-radius: 18px;
+.text1,
+.text2 {
+  margin-left: 20px;
+  width: 400px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
 }
 
-.boxHeader {
+.text1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.text2 {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+.one,
+.three {
+  color: #5d5d5d;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  /* align-items: center; */
-  padding-left: 47px;
-  padding-right: 39px;
-  padding-top: 51px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.two,
+.four {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.boxText {
+.bigger-text {
+  display: flex;
+  position: absolute;
+  top: 500px;
+}
+.bigger-text-left,
+.bigger-text-right {
+  position: absolute;
+  width: 500px;
+  height: 345px;
+  height: 470px;
+}
+
+.bigger-text-left {
+  font-family: Source Sans Pro;
+  font-size: 15px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #767676;
-  padding-top: 20px;
-  padding-left: 47px;
-  padding-right: 95px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  left: 120px;
 }
 
-.buttonGrey {
-    background-color: #544e4D;
-    border: none;
-    color: white;
-    border-radius: 8px;
-    padding: 12px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.bigger-text-right {
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  left: 700px;
+}
+
+/* Match Me Section */
+
+.matchMe {
+  height: 800px;
+  background-color: #f7f6f3;
+  padding-top: 110px;
+}
+
+.matchMeHeading {
+  font-family: "Source Sans Pro";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.matchMeParent {
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+
+.matchMeLeftHeading {
+  margin-left: 120px;
+  margin-bottom: 25px;
+  width: 360px;
+  font-family: "Source Sans Pro";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.matchMeLeftText {
+  margin-left: 120px;
+  margin-bottom: 42px;
+  width: 360px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.matchMeLeftButton {
+  margin-left: 120px;
+}
+
+.matchMeRight {
+  position: absolute;
+  width: 666px;
+  height: 355px;
+  left: 656px;
+  top: 2622px;
+
+  background: url(comp1.png);
+}
+
+.buttonBoxMatchMe {
+  padding-left: 120px;
 }
