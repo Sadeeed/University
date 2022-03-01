@@ -333,11 +333,11 @@ March 2, 2022
 
 .stear {
   position: relative;
-  width: 476px;
+  width: 294px;
   height: 324px;
   left: 1518px;
   top: 101px;
-  
+
   background: url(static/img/stearing.png);
 }
 
@@ -360,7 +360,78 @@ March 2, 2022
 
 .buttonBoxSignUp {
   position: absolute;
-  top:273px;
+  top: 273px;
   left: 995px;
   bottom: 136px;
+}
+
+/* Footer Section */
+.footer {
+  position: absolute;
+  width: 1707px;
+  height: 503px;
+  left: -134px;
+  top: 4960px;
+
+  background: #3f3c3c;
+}
+
+.footerLogo {
+  position: relative;
+  width: 128.13px;
+  height: 65.3px;
+  left: 265px;
+  top: 60px;
+  bottom: 377.7px;
+
+  background: url(static/img/logo.png);
+}
+
+.footerLicense {
+  position: relative;
+  width: 360.23px;
+  height: 16px;
+  left: 265.46px;
+  top: 278px;
+  bottom: 209px;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+
+  color: #ffffff;
+}
+
+.footerLinks {
+  position: relative;
+  top: 193px;
+  left: 155px;
+  bottom: 294px;
+  color: white;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLinks ul li {
+  display: inline;
+  padding: 77.8px;
+  list-style: none;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
