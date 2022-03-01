@@ -2,34 +2,144 @@
 background-color: #C4C4C4
  */
 
-.header{
-    /* background: #C4C4C4; */
-    display: flex;
-    /* justify-content: center; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    width: auto;
-    border: 1px solid black;
+.header {
+  /* background: #C4C4C4; */
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  width: auto;
+  border: 1px solid black;
 }
 
-.links{
-    display: flex;
+.links {
+  display: flex;
 }
 
-.links ul{
-    list-style-type: none;
+.links ul {
+  list-style-type: none;
 }
 
-.links li{
-    display: inline;
-    padding: 14px;
+.links li {
+  display: inline;
+  padding: 14px;
 }
 
-.links a{
+.links a {
+  text-decoration: none;
+  /* padding-left: 100px; */
+}
+
+/* Features Section */
+.features {
+  background-color: #544e4d;
+  text-align: center;
+  height: 600px;
+}
+
+.feature-heading {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  top: 15px;
+}
+
+.featureCards {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card {
+  width: 237px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  padding: 30px 30px 30px 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.imageBg {
+  background-color: aqua;
+  border-radius: 50%;
+  height: 88px;
+  width: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 44px;
+}
+
+.card-text {
+  font-weight: 600;
+  padding: 30px 30px 15px 30px;
+  color: #544e4d;
+}
+
+.card-text-paragraph {
+  font-size: 13px;
+}
+
+/* Main Page (ulti gari wala) */
+.mainPage {
+  position: absolute;
+  height: 650px;
+  background-color: #f7f6f3;
+}
+
+.carImage {
+  position: absolute;
+  width: 859.54px;
+  height: 611.06px;
+  left: 535.46px;
+  top: 128.77px;
+
+  background: url(static/img/shutterstock_1721657422\ 1.png);
+  border-radius: 10px;
+}
+
+.infoBox {
+  position: absolute;
+  width: 524px;
+  height: 431px;
+  left: 93px;
+  top: 188px;
+
+  background: #ffffff;
+  border-radius: 18px;
+}
+
+.boxHeader {
+  font-weight: 600;
+  font-size: 28px;
+  /* align-items: center; */
+  padding-left: 47px;
+  padding-right: 39px;
+  padding-top: 51px;
+}
+
+.boxText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #767676;
+  padding-top: 20px;
+  padding-left: 47px;
+  padding-right: 95px;
+}
+
+.buttonGrey {
+    background-color: #544e4D;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 28px;
+    text-align: center;
     text-decoration: none;
-    /* padding-left: 100px; */
-}
-
-.features{
-    background-color: #544E4D
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
