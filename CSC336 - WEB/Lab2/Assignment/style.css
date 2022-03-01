@@ -255,6 +255,7 @@ March 2, 2022
 }
 
 .matchMeLeftText {
+  color: #646464;
   margin-left: 120px;
   margin-bottom: 42px;
   width: 360px;
@@ -283,4 +284,83 @@ March 2, 2022
 
 .buttonBoxMatchMe {
   padding-left: 120px;
+}
+
+/* Teach Me Section */
+
+.teachMeRight {
+  margin-top: 20px;
+  margin-left: 0px;
+  padding-left: 720px;
+}
+
+.teachMeLeft {
+  position: absolute;
+  width: 696px;
+  height: 515px;
+  left: 0px;
+  top: 3184px;
+
+  background: url(static/img/teach-me.png);
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* Find It Section */
+
+.findItRight {
+  position: absolute;
+  width: 496px;
+  height: 410px;
+  left: 772px;
+  top: 3942px;
+
+  background: url(static/img/find-it.png);
+  border: 5px solid #ffffff;
+  filter: drop-shadow(0px 4px 45px rgba(0, 0, 0, 0.12));
+  border-radius: 10px;
+}
+
+/* Signup Section */
+
+.signUp {
+  background-color: #f19961;
+  position: absolute;
+  width: 1866px;
+  height: 461px;
+  left: -372px;
+  top: 4535px;
+}
+
+.stear {
+  position: relative;
+  width: 476px;
+  height: 324px;
+  left: 1518px;
+  top: 101px;
+  
+  background: url(static/img/stearing.png);
+}
+
+.signUpHeading {
+  position: absolute;
+  top: 139px;
+  left: 802px;
+  bottom: 240px;
+  color: white;
+  width: 580px;
+  font-family: "Source Sans Pro";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+  align-items: center;
+}
+
+.buttonBoxSignUp {
+  position: absolute;
+  top:273px;
+  left: 995px;
+  bottom: 136px;
 }
