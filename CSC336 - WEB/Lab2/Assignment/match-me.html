@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rookie Rides - Match Me</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img src="static/img/logo.png" alt="Logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Teach Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Match Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find It</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buy It</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center px-3">
+
+        <span class="px-3"><b>Emily</b> Smith</span>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="static/img/user.png" class="rounded-circle" height="46" width="46" alt="dp" loading="lazy" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+<div style="background-color: #EBDFCD; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; height: 600px; width: 100%;margin-top: -20px px; z-index: 1;">
+    <br> <br>
+        <p style="padding-left: 40px;"> Rookie Rides > <b> Match Me </b></p>
+        <br>
+        <center> <B></B>Not satisfied with your results? Try adjusting your criteria.</center> <br>
+
+        <div style="background-color: white; height: 70px; width: 80%; margin-left: 10%; display: flex; flex-wrap: nowrap; align-content: center; border-radius: 8px;   ">
+        <div style="height: 40px; width: 20%; border: 1px solid orange; background-color:beige; margin-left: 10px; border-radius: 5px; margin-top: 10px;"> <span style="margin-left: 5%; margin-top: 5%; ">Budget <b>300$/Month
+        </b></span> </div>
+        <div style="height: 40px; width: 20%; background-color:beige;margin-left: 10px;border-radius: 5px; margin-top: 10px;"> Name <span style="padding-left: 30px;"><b>Emily</b></span></div>
+        <div style="height: 40px; width: 20%; background-color:beige;margin-left: 10px; margin-top: 10px;border-radius: 5px;"> Body <b> <span style="padding-left: 30px;"> Sedan</span> <i style="font-size:24px" class="fa">&#xf0dd;</i></b></div>
+        <div style="height: 40px; width: 20%; background-color:beige;margin-left: 10px; margin-top: 10px;border-radius: 5px;"> <span>Safety Feature    <span style="padding-left: 25px; "> 12</span> <i style="font-size:24px" class="fa">&#xf0dd;</i> </span></div>
+        <div style="height: 40px; width: 20%; margin-left: 10px; align-content: center; text-align: center;  margin-top: 10px;"> 
+            <button class="buttonGrey">Apply Filter</button></div>
+        </div>
+        <br> 
+
+
+        <center><span style="font-size: 20px;"> <b> Your Top Match</b></span></center>
+         <br>
+        <div style="margin-left: 10%; border-radius: 10px; z-index: 25; background-color: white; width: 80%; height: 600px; display: flex; flex-wrap: nowrap; ">
+
+            <div style="border-right: 1px solid #DDDDDD ; background-color: white; width: 20% ; height: inherit; "> 
+             <div style="display: flex; flex-wrap: nowrap; height: 250px; width: 100%; "> 
+                <p style="position: absolute; margin-top: 80px; margin-left: 70px; font-size: 40px;">76% </p>
+                <i style="font-size:24px; margin-top: 65px; margin-left: 80px;" class="fa">&#xf00c;</i>
+                <img src="static/img/eclipse1.png" alt="eclipse 1" width="150px" height="150px" style="margin-left: -75px; margin-top: 40px;">
+                <p style="margin-top: 200px; margin-left: -100px; font-size: 18px ;"><b>Criteria <br> Match</b></p>
+   
+             </div>
+             <div style="display: flex; flex-wrap: nowrap; height: 250px; width: 100%; "> 
+                <p style="position: absolute; margin-top: 80px; margin-left: 70px; font-size: 40px;">92% </p>
+                <img src="static/img/eclipse2.png" alt="eclipse 2" width="150px" height="150px" style="margin-left: 40px; margin-top: 40px;">
+                <i style="font-size:24px; margin-top: 65px; margin-left: -90px;" class="fa">&#xf006;</i>
+                <p style="margin-top: 200px; margin-left: -45px; font-size: 18px ;"><b>Safety <br> Rating</b></p>
+            </div> </div>
+            <div style="width: 40%; height: inherit;">
+                   <img src="static/img/image 12.png" alt=" Image Car" style="width: 120%; height: ; margin-left: -50px; margin-top: 60px;">
+
+            </div >
+            <div style="width:40%; height: inherit;">
+                <br> <br>
+                <h2>Toyota Corolla</h1>
+                <p style="color: darkgrey;"> 2018</p>
+                <br>
+                <b> Feature Matches</b> <br>
+                <span> Airbags <span style="padding-left: 130px;"> Blind Spot Detection</span></span> <br>
+                <span> ABS <span style="padding-left: 154px;"> All Wheel Drive</span></span> <br>
+                <span> Emergency Response <span style="padding-left: 40px;"> Semi</span></span> <br>
+
+                <br><br>
+
+                <span style="font-size: 25px; color: black;"> $8000 - $13000</span> <br> <br>
+                <button type="button" class="buttonGrey">View Details</button>
+                 <span style="padding-left: 30px;"> <i style="font-size:24px" class="fa">&#xf24e;</i> Compare</span>
+            </div> 
+            
+        </div>
+
+</div>
+<br> <br>
+<div style="width: 100%; height: 800px; background-color:ghostwhite; z-index: 1; margin-top: 240px; border-bottom: 1px solid black;">
+<center><span style="font-size: 40px;"> <b> Your Other matches</b></span></center>
+ <br> <br>
+ <center><span style="font-size: 25px;">  Highest Safety Rating</span></center>
+ <center><span style="font-size: 15px; color: darkgray;"> Safety Rating 80% - 100%</span></center> <br>
+
+ <div style="display: flex; flex-wrap: nowrap; flex-direction: row; height: 500px; width: 100%;">
+ <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+      <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+       <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+       <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+       <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+       <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+       <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+       <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+       </div>
+      <div style="width: 100%; height: 85%;" > 
+       <img src="static/img/volvo.png" alt="s70"> 
+       <h2 style="padding-left: 10px;">Volvo S60</h2>
+       <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+       <br>
+       <button class="buttonGrey">Apply Filter</button></div>
+       <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+    </div>
+   
+    <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+        <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+         <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+         <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+         <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+         <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+         </div>
+        <div style="width: 100%; height: 85%;" > 
+         <img src="static/img/nissan.png" alt="s70"> 
+         <h2 style="padding-left: 10px;">Nissan Versa</h2>
+         <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+         <br>
+         <button class="buttonGrey">Apply Filter</button></div>
+         <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+      </div>
+      <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+        <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+         <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+         <img src="static/img/eclipse1.png" alt="eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+         <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+         <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+         </div>
+        <div style="width: 100%; height: 85%;" > 
+         <img src="static/img/corolla.png" alt="s70"> 
+         <h2 style="padding-left: 10px;">Toyota Corolla</h2>
+         <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+         <br>
+         <button class="buttonGrey">Apply Filter</button></div>
+         <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+      </div>
+      <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+        <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+         <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+         <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+         <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+         <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+         <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+         </div>
+        <div style="width: 100%; height: 85%;" > 
+         <img src="static/img/volvo.png" alt="s70"> 
+         <h2 style="padding-left: 10px;">Volvo S60</h2>
+         <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+         <br>
+         <button class="buttonGrey">Apply Filter</button></div>
+         <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+      </div>
+ </div>
+ <br><br> <br>
+ <div class="viewAllP3">
+    <button class="viewAllButton"> View All 
+        <span style="padding-left: 25px;">
+            <img src="static/img/Vector.png" alt="arrow">
+        </span>
+    </button>
+</div>
+
+ <p><br><br>-</p>
+ </div>
+
+
+ <div style="width: 100%; height: 800px; background-color:ghostwhite; z-index: 1;   border-bottom: 1px solid black;">
+    
+     <center><span style="font-size: 25px;"> <br> Moderate Safety Rating</span></center>
+     <center><span style="font-size: 15px; color: darkgray;"> Safety Rating 70% - 80%</span></center> <br>
+    
+     <div style="display: flex; flex-wrap: nowrap; flex-direction: row; height: 500px; width: 100%;">
+     <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+          <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+           <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+           <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+           <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+           <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+           <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+           <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+           </div>
+          <div style="width: 100%; height: 85%;" > 
+           <img src="static/img/volvo.png" alt="s70"> 
+           <h2 style="padding-left: 10px;">Volvo S60</h2>
+           <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+           <br>
+           <button class="buttonGrey">Apply Filter</button></div>
+           <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+        </div>
+       
+        <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+            <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+             <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+             <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+             <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+             <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+             </div>
+            <div style="width: 100%; height: 85%;" > 
+             <img src="static/img/volvo.png" alt="s70"> 
+             <h2 style="padding-left: 10px;">Volvo S60</h2>
+             <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+             <br>
+             <button class="buttonGrey">Apply Filter</button></div>
+             <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+          </div>
+          <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+            <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+             <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+             <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+             <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+             <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+             </div>
+            <div style="width: 100%; height: 85%;" > 
+             <img src="static/img/nissan.png" alt="s70"> 
+             <h2 style="padding-left: 10px;">Nissan Versa</h2>
+             <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+             <br>
+             <button class="buttonGrey">Apply Filter</button></div>
+             <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+          </div>
+          <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+            <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+             <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+             <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+             <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+             <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+             <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+             </div>
+            <div style="width: 100%; height: 85%;" > 
+             <img src="static/img/volvo.png" alt="s70"> 
+             <h2 style="padding-left: 10px;">Volvo S60</h2>
+             <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+             <br>
+             <button class="buttonGrey">Apply Filter</button></div>
+             <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+          </div>
+     </div>
+     <br><br> <br>
+     <div class="viewAllP3">
+        <button class="viewAllButton"> View All 
+            <span style="padding-left: 25px;">
+                <img src="static/img/Vector.png" alt="arrow">
+            </span>
+        </button>
+    </div>
+     </div>
+
+
+
+     <div style="width: 100%; height: 800px; background-color:ghostwhite; z-index: 1;   border-bottom: 1px solid #DDDDDD;">
+    
+        <center><span style="font-size: 25px;"> <br> Lowest Safety Rating</span></center>
+        <center><span style="font-size: 15px; color: darkgray;"> Safety Rating <60%      </span></center> <br>
+       
+        <div style="display: flex; flex-wrap: nowrap; flex-direction: row; height: 500px; width: 100%;">
+        <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+             <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+              <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+              <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+              <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+              <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+              <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+              <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+              </div>
+             <div style="width: 100%; height: 85%;" > 
+              <img src="static/img/volvo.png" alt="s70"> 
+              <h2 style="padding-left: 10px;">Volvo S60</h2>
+              <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+              <br>
+              <button class="buttonGrey">Apply Filter</button></div>
+              <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+           </div>
+          
+           <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+               <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+                <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+                <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+                <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+                <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+                </div>
+               <div style="width: 100%; height: 85%;" > 
+                <img src="static/img/nissan.png" alt="s70"> 
+                <h2 style="padding-left: 10px;">Nissan Versa</h2>
+                <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+                <br>
+                <button class="buttonGrey">Apply Filter</button></div>
+                <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+             </div>
+             <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+               <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+                <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+                <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+                <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+                <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+                </div>
+               <div style="width: 100%; height: 85%;" > 
+                <img src="static/img/volvo.png" alt="s70"> 
+                <h2 style="padding-left: 10px;">Volvo S60</h2>
+                <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+                <br>
+                <button class="buttonGrey">Apply Filter</button></div>
+                <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+             </div>
+             <div id="card1" style="background-color: white; border-radius: 5px; width: 330px; height: inherit; margin-left: 20px; box-shadow: 0px 1px 5px 0px #888888; ">
+               <div style="border-bottom: 1px solid grey; height: 15%; width: 100%; " > 
+                <p style="margin-left: 25px; margin-top: 50px;"><b>76%</b> </p>
+                <img src="static/img/eclipse1.png" alt=" eclipse1" style="position: absolute; height: 60px; width: 60px; margin-left: 10px; margin-top: -55px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 80px; font-size: medium;"><b> CRITERIA <br> MATCH</b></p>
+                <p style="position: relative; margin-left: 170px; margin-top: -50px;"><b>91%</b> </p> 
+                <img src="static/img/eclipse2.png" alt="eclipse2" style="position: absolute; height: 60px; width: 60px; margin-top: -55px; margin-left: 155px;">
+                <p style="position: relative; margin-top: -50px; margin-left: 220px; font-size: medium;"><b> SAFETY <br> RATING</b></p>
+                </div>
+               <div style="width: 100%; height: 85%;" > 
+                <img src="static/img/volvo.png" alt="s70"> 
+                <h2 style="padding-left: 10px;">Volvo S60</h2>
+                <p style="color: gray; font-size: small;padding-left: 10px;"> 2017</p> 
+                <br>
+                <button class="buttonGrey">Apply Filter</button></div>
+                <img src="static/img/icons.PNG" alt="ff" style="margin-left: 150px; margin-top: -250px;">
+             </div>
+        </div>
+        <br><br> <br>
+        <div class="viewAllP3">
+            <button class="viewAllButton"> View All 
+                <span style="padding-left: 25px;">
+                    <img src="static/img/Vector.png" alt="arrow">
+                </span>
+            </button>
+        </div>
+        </div>
+
+        <div class="startOverDiv">
+         <span><br><br></span>
+            <h2>Want to Start Over?</h2>
+         <p> Start over if you want to modify your preferences</p>
+         <button class="startOverButton"> Start Over</button>
+        </div>
+
+
+</body>
+</html>

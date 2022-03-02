@@ -15,7 +15,7 @@ March 2, 2022
 
 .carImage {
   position: absolute;
-  width: 859.54px;
+  width: 770.54px;
   height: 611.06px;
   left: 535.46px;
   top: 43.7px;
@@ -279,7 +279,7 @@ March 2, 2022
   left: 656px;
   top: 2622px;
 
-  background: url(comp1.png);
+  background: url(static/img/comp1.png);
 }
 
 .buttonBoxMatchMe {
@@ -434,4 +434,41 @@ March 2, 2022
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+
+/* Match Me Page */
+
+.viewAllButton {
+  width: 140px;
+  height: 49px;
+  background: #ffffff;
+  border-radius: 90px;
+}
+
+.viewAllP3 {
+  text-align: center;
+}
+
+.startOverDiv {
+  background-color: #544e4d;
+  color: white;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.startOverButton {
+  width: 143.8px;
+  height: 45.93px;
+  left: 648.1px;
+  top: 3706.33px;
+  background-color: #544e4d;
+  color: white;
+  border: 1.07385px solid #ffffff;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.08));
+  border-radius: 8px;
 }
