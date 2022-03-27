@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/stylesheet.css"
 import "./assets/css/homepage.css"
 import "./assets/css/newloginsignup.css"
-import IndexPage from "./components/Index/Index";
+import HomePage from "./components/Homepage/Home";
 
 function App() {
   return (
-    <IndexPage/>
+    <HomePage/>
   );
 }
 
