@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm,webstorm,compressed,visualstudiocode,react,reactnative,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,webstorm,compressed,visualstudiocode,react,reactnative,node
 
+### React Specific Stuff ###
+CSC336 - WEB/React/Assignment 2/website-clone/
+
 ### Compressed ###
 *.7z
 *.deb
