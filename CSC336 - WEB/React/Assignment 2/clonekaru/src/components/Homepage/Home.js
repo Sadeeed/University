@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import '../Index/Index.css'
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import './Home.css'
 import SearchBar from "../SearchBar/SearchBar";
 import { cities } from "../../assets/js/cities";
 
-class IndexPage extends Component {
+class HomePage extends Component {
   state = {};
   render() {
     return (
-      <div className="IndexPage">
+      <div className="HomePage">
         <Header />
         <SearchBar cities={cities}/>
         <Footer />
@@ -18,4 +18,4 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage;
+export default HomePage;
