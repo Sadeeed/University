@@ -6,7 +6,7 @@ import third_image from "../../assets/images/bg/Bus/websliderbus2a.jpg";
 function HeroCarousel() {
   return (
     <div className="hero-bg-slideshow">
-      <Carousel indicators={false} controls={false}>
+      <Carousel indicators={false} controls={false} fade={true}>
         <Carousel.Item>
           <img className="d-block w-100" src={first_image} alt="First slide" />
         </Carousel.Item>
