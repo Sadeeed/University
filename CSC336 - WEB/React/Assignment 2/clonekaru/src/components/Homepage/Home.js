@@ -5,6 +5,8 @@ import "./Home.css";
 import SearchBar from "../SearchBar/SearchBar";
 import { cities } from "../../assets/js/cities";
 import HeroCarousel from "../Carousel/HeroCarousel";
+import SliderCarousel from "../Carousel/SliderCarousel";
+import Popular from "../Popular/Popular";
 
 class HomePage extends Component {
   state = {};
@@ -17,6 +19,8 @@ class HomePage extends Component {
             <HeroCarousel />
             <SearchBar cities={cities} />
           </div>
+          <SliderCarousel/>
+          <Popular/>
         </div>
         <Footer />
       </div>
