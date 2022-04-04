@@ -1,4 +1,4 @@
-import bootstrap from "bootstrap";
+import "bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import "./assets/css/stylesheet.css"
 import "./assets/css/homepage.css"
