@@ -7,6 +7,8 @@ import { cities } from "../../assets/js/cities";
 import HeroCarousel from "../Carousel/HeroCarousel";
 import SliderCarousel from "../Carousel/SliderCarousel";
 import Popular from "../Popular/Popular";
+import Partners from "../Partners/Partners";
+import MobileApp from "../Ad/MobileApp";
 
 class HomePage extends Component {
   state = {};
@@ -21,6 +23,8 @@ class HomePage extends Component {
           </div>
           <SliderCarousel/>
           <Popular/>
+          <Partners/>
+          <MobileApp/>
         </div>
         <Footer />
       </div>

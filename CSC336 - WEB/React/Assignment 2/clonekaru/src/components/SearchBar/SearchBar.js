@@ -1,5 +1,3 @@
-import React, { Component } from "react";
-
 function SearchBar(props) {
   return (
     <div className="hero-content pt-lg-2 mt-lg-5">
