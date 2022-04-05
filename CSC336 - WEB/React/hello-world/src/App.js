@@ -2,6 +2,7 @@ import './App.css';
 import SearchButton from './searchButton';
 import Card from './Card';
 import Layout from './Layout';
+import AddRemoveTable from './AddRemoveTable';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <SearchButton/>
       <SearchButton/>
       <SearchButton/> */}
-      <Layout />
+      {/* <Layout /> */}
+      <AddRemoveTable></AddRemoveTable>
     </div>
   );
 }
