@@ -13,10 +13,10 @@ class Productt extends Component {
             <td>{this.props.Qty}</td>
             <td>{this.props.Price}</td>
             <td>
-              <Button variant="primary" onClick={() => this.props.onIncrement(this.props.id)}>+</Button>{" "}
-              <Badge bg={this.props.Count === 0 ? 'warning' : 'success'} text="dark">
+              <Button variant="primary" onClick={() => this.props.onIncrement(this.props.id)}>+</Button>{"  "}
+              <Badge bg={this.props.Count === 0 ? 'warning' : 'success'} text={this.props.Count === 0 ? 'dark' : 'light'}>
                 {this.props.Count}
-              </Badge>{" "}
+              </Badge>{"  "}
               <Button variant="danger" onClick={() => this.props.onDecrement(this.props.id)}>-</Button>
             </td>
             <td>
