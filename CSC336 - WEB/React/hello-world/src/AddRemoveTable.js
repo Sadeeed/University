@@ -5,12 +5,12 @@ import Productt from "./Productt";
 class AddRemoveTable extends Component {
   state = {
     products: [
-      { id: 1, name: "Potato", Qty: 5, Price: 150, count: 0 },
-      { id: 2, name: "Trousers", Qty: 15, Price: 145, count: 0 },
-      { id: 3, name: "T-Shirts", Qty: 34, Price: 190, count: 0 },
-      { id: 4, name: "Shoes", Qty: 54, Price: 200, count: 0 },
-      { id: 5, name: "Earphones", Qty: 32, Price: 115, count: 0 },
-      { id: 6, name: "Sandals", Qty: 21, Price: 120, count: 0 },
+      { id: 0, name: "Potato", Qty: 5, Price: 150, count: 0 },
+      { id: 1, name: "Trousers", Qty: 15, Price: 145, count: 0 },
+      { id: 2, name: "T-Shirts", Qty: 34, Price: 190, count: 0 },
+      { id: 3, name: "Shoes", Qty: 54, Price: 200, count: 0 },
+      { id: 4, name: "Earphones", Qty: 32, Price: 115, count: 0 },
+      { id: 5, name: "Sandals", Qty: 21, Price: 120, count: 0 },
     ],
   };
 
@@ -20,16 +20,14 @@ class AddRemoveTable extends Component {
   };
 
   handleIncrement = (id) => {
-    id = id - 1;
-    let products = this.state.products;
+    var products = this.state.products;
     products[id].count += 1;
     products[id].Qty += 1;
     this.setState({ products });
   };
 
   handleDecrement = (id) => {
-    id = id - 1;
-    let products = this.state.products;
+    var products = this.state.products;
     if (products[id].count > 0) {
       products[id].count -= 1;
       products[id].Qty -= 1;
