@@ -38,7 +38,7 @@ class AddRemoveTable extends Component {
   render() {
     return (
       <div className="bg-dark text-light">
-        <p>Showing {this.state.products.length} products</p>
+        <p className='text-center'>Showing <b>{this.state.products.length}</b> products</p>
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>
