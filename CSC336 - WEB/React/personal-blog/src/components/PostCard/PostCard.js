@@ -11,21 +11,13 @@ class PostCard extends Component {
       >
         <div className="card-body">
           <h2 className="card-title">
-            {"{"}
-            {"{"} post.title {"}"}
-            {"}"}
+            {this.props.title}
           </h2>
           <p className="card-text text-muted h6">
-            {"{"}
-            {"{"} post.author {"}"}
-            {"}"} | {"{"}
-            {"{"} post.createdOn{"}"}
-            {"}"}{" "}
+            {this.props.author} | {this.props.created} 
           </p>
           <p className="card-text">
-            {"{"}
-            {"{"}post.content| slice:":200" | safe {"}"}
-            {"}"} ....{" "}
+            {this.props.content}
           </p>
           <Link
             to="/post"
