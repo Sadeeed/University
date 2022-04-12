@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
+import PostCard from "./components/PostCard/PostCard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Test</p>
-      </header>
+      <PostCard/>
+      <Outlet/>
     </div>
   );
 }
