@@ -9,9 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="post" element={<BlogPost />} />
-      </Route>
+      <Route path="/" element={<App />} />
+      <Route path="post" element={<BlogPost />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
