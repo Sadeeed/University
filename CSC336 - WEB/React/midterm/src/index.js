@@ -15,8 +15,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route index element={<App />} />
-      <Route path="register" element={<SignUp />} />
-      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="/register" element={<SignUp />} />
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>

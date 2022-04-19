@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import GenericLoginForm from "../Forms/GenericLoginForm";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import SignupForm from "../Forms/SignupForm";
 
 class SignUp extends Component {
   state = {};
@@ -10,7 +10,7 @@ class SignUp extends Component {
     return (
       <div className="App">
         <Header/>
-        <GenericLoginForm />
+        <SignupForm />
         <Footer/>
       </div>
     );

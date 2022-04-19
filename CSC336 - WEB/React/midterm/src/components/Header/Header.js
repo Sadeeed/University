@@ -25,7 +25,7 @@ function Header(props) {
               </b>
               <Link
                 role="button"
-                to="dashboard/"
+                to="/dashboard"
                 className="btn btn-outline-light me-2"
               >
                 Dashboard
@@ -53,7 +53,7 @@ function Header(props) {
               </Link> */}
               <Link
                 role="button"
-                to="register/"
+                to="/register"
                 className="btn btn-outline-light me-2"
               >
                 Register

@@ -8,7 +8,7 @@ class ErrorCard extends Component {
       <div className="justify-content-center">
         <div className="card m-5 bg-nord text-nord-main">
           <div className="card-body">
-            <
+            <i className="bi bi-exclamation-square text-nord11" style={{fontSize:'60px'}}></i>
             <h2 className="card-title">{this.props.title}</h2>
             <p className="card-text">{this.props.content}</p>
             <Link to="/" className="btn btn-nord">

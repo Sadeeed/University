@@ -23,8 +23,16 @@
   color: var(--nord6) !important;
 }
 
+.text-nord-input {
+  color: var(--nord1) !important;
+}
+
 .text-nord4 {
-  background-color: var(--nord4) !important;
+  color: var(--nord4) !important;
+}
+
+.text-nord11 {
+  color: var(--nord11) !important;
 }
 
 .btn-nord {

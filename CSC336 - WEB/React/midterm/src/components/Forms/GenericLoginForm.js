@@ -46,7 +46,7 @@ const GenericLoginForm = () => {
             </label>
             <input
               type="text"
-              className="form-control text-nord4"
+              className="form-control text-nord-input"
               id="username"
               placeholder="Enter Username"
               onChange={formik.handleChange}
@@ -67,7 +67,7 @@ const GenericLoginForm = () => {
             </label>
             <input
               type="password"
-              className="form-control text-nord4"
+              className="form-control text-nord-input"
               id="password"
               placeholder="Password"
               onChange={formik.handleChange}
