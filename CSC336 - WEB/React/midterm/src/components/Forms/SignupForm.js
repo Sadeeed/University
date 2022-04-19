@@ -6,19 +6,47 @@ const validate = (values) => {
   const errors = {};
 
   if (!values.Username) {
-    errors.username = "Required";
-  } else if (values.username.length > 15) {
-    errors.username = "Must be 15 characters or less";
+    errors.Username = "Required";
+  } else if (values.Username.length > 15) {
+    errors.Username = "Must be 15 characters or less";
   }
 
   if (!values.Password) {
-    errors.password = "Required";
+    errors.Password = "Required";
   } else if (
-    !/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/i.test(
-      values.password
+    !/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/i.test(
+      values.Password
     )
   ) {
-    errors.password = "Invalid Password";
+    errors.Password = "Invalid Password";
+  }
+
+  if (!values.Image) {
+    errors.Image = 'Required';
+  }
+
+  if (!values.AgeGroup) {
+    errors.AgeGroup = 'Required'
+  } else if (/\D/.test(values.AgeGroup)){
+    errors.AgeGroup = 'Age Group should be an integer'
+  }
+
+  if (!values.Gender) {
+    errors.Gender = 'Please select a gender'
+  }
+
+  if (!values.toc) {
+    errors.toc = 'Please accept the Terms & Conditions'
+  }
+
+  console.log(errors, Object.keys(errors).length)
+  if (Object.keys(errors).length > 0) {
+    console.log('true cond', document.getElementById('submit-button').disabled)
+    document.getElementById('submit-button').disabled = true
+  }
+  else{
+    console.log('false cond', document.getElementById('submit-button').disabled)
+    document.getElementById('submit-button').removeAttribute('disabled')
   }
 
   return errors;
@@ -59,8 +87,8 @@ const SignupForm = () => {
                   onChange={formik.handleChange}
                   value={formik.values.Username}
                 />
-                {formik.errors.username ? (
-                  <div>{formik.errors.username}</div>
+                {formik.errors.Username ? (
+                  <div className="text-nord11">{formik.errors.Username}</div>
                 ) : null}
               </div>
             </div>
@@ -74,6 +102,9 @@ const SignupForm = () => {
                   onChange={formik.handleChange}
                   value={formik.values.Password}
                 />
+                {formik.errors.Password ? (
+                  <div className="text-nord11">{formik.errors.Password}</div>
+                ) : null}
               </div>
             </div>
           </div>
@@ -88,28 +119,32 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.Image}
             />
-            <label className="input-group-text" for="Image">
+            <label className="input-group-text" htmlFor="Image">
               Upload Image
             </label>
+            {formik.errors.Image ? <div className="text-nord11">{formik.errors.Image}</div> : null}
           </div>
 
           {/* Select */}
-          <select
-            className="form-select mb-4"
-            aria-label="Age Group"
-            id="AgeGroup"
-            name="AgeGroup"
-            onChange={formik.handleChange}
-            // value={formik.values.AgeGroup}
-          >
-            <option defaultValue={""}>Select Your Age Group</option>
-            <option value={20}>Twenties</option>
-            <option value={30}>Thirties</option>
-            <option value={40}>Forties</option>
-            <option value={50}>Fifties</option>
-            <option value={60}>Sixties</option>
-            <option value={70}>Seventies</option>
-          </select>
+          <div>
+            <select
+              className="form-select mb-4"
+              aria-label="Age Group"
+              id="AgeGroup"
+              name="AgeGroup"
+              onChange={formik.handleChange}
+              // value={formik.values.AgeGroup}
+            >
+              <option defaultValue={""}>Select Your Age Group</option>
+              <option value={20}>Twenties</option>
+              <option value={30}>Thirties</option>
+              <option value={40}>Forties</option>
+              <option value={50}>Fifties</option>
+              <option value={60}>Sixties</option>
+              <option value={70}>Seventies</option>
+            </select>
+            {formik.errors.AgeGroup ? <div className="text-nord11">{formik.errors.AgeGroup}</div> : null}
+          </div>
 
           {/* Radios */}
           <div>
@@ -144,7 +179,7 @@ const SignupForm = () => {
               >
                 Female
               </label>
-              {/* <p>{formik.values.Gender}</p> */}
+              {formik.errors.Gender ? <div className="text-nord11">{formik.errors.Gender}</div> : null}
             </div>
           </div>
 
@@ -160,54 +195,13 @@ const SignupForm = () => {
             <label className="form-check-label text-nord-main" htmlFor="toc">
               I have read the terms and conditions
             </label>
+            {formik.errors.toc ? <div className="text-nord11">{formik.errors.toc}</div> : null}
           </div>
 
-          <button type="submit" className="btn btn-nord btn-block mb-4">
+          <button type="submit" className="btn btn-nord btn-block mb-4" id="submit-button">
             Sign up
           </button>
         </form>
-
-        {/* <form onSubmit={formik.handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="username" className="text-nord-main">
-              Username
-            </label>
-            <input
-              type="text"
-              className="form-control text-nord-input"
-              id="username"
-              placeholder="Username"
-              onChange={formik.handleChange}
-              value={formik.values.username}
-            />
-
-            {formik.errors.username ? (
-              <div>{formik.errors.username}</div>
-            ) : null}
-
-          </div>
-          <div className="form-group">
-            <label htmlFor="password" className="text-nord-main">
-              Password
-            </label>
-            <input
-              type="password"
-              className="form-control text-nord-input"
-              id="password"
-              placeholder="Password"
-              onChange={formik.handleChange}
-              value={formik.values.password}
-            />
-
-            {formik.errors.password ? (
-              <div>{formik.errors.password}</div>
-            ) : null}
-
-          </div>
-          <button type="submit" className="btn btn-nord mt-2">
-            Submit
-          </button>
-        </form> */}
       </Card>
     </div>
   );
