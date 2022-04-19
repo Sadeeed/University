@@ -22,7 +22,7 @@ const validate = (values) => {
   }
 };
 
-const GenericLoginForm = () => {
+const SignupForm = () => {
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -52,9 +52,6 @@ const GenericLoginForm = () => {
               onChange={formik.handleChange}
               value={formik.values.username}
             />
-            {/* <small id="passwordHelp" className="form-text text-nord-muted">
-            We'll never share your password with anyone else.
-          </small> */}
 
             {formik.errors.username ? (
               <div>{formik.errors.username}</div>
@@ -88,4 +85,4 @@ const GenericLoginForm = () => {
   );
 };
 
-export default GenericLoginForm;
+export default SignupForm;

@@ -14,11 +14,11 @@ function Header(props) {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="/admin" className="nav-link px-2 text-white">
                   Admin
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div className="text-end">
               <b>
@@ -30,7 +30,7 @@ function Header(props) {
               >
                 Dashboard
               </Link>
-              <Link
+              {/* <Link
                 role="button"
                 to="new/"
                 className="btn btn-outline-light me-2"
@@ -50,7 +50,7 @@ function Header(props) {
                 className="btn btn-outline-light me-2"
               >
                 Login
-              </Link>
+              </Link> */}
               <Link
                 role="button"
                 to="register/"

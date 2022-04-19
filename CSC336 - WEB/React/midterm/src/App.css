@@ -16,11 +16,15 @@
 }
 
 .text-nord-muted {
-  color: var(--nord3);
+  color: var(--nord3) !important;
 }
 
 .text-nord-main {
-  color: var(--nord6);
+  color: var(--nord6) !important;
+}
+
+.text-nord4 {
+  background-color: var(--nord4) !important;
 }
 
 .btn-nord {
@@ -38,5 +42,6 @@ a:hover {
 footer {
   position: absolute;
   bottom: 0;
+  margin-bottom: 0%;
   width:100%;
 }
