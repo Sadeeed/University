@@ -7,8 +7,10 @@ const validate = (values) => {
 
   if (!values.Username) {
     errors.Username = "Required";
-  } else if (values.Username.length > 15) {
-    errors.Username = "Must be 15 characters or less";
+  // } else if (values.Username.length > 15) {
+  //   errors.Username = "Must be 15 characters or less";
+  } else if (/\W/.test(values.Username)) {
+    errors.Username = "Username must not contain numbers or symbols"
   }
 
   if (!values.Password) {
@@ -32,7 +34,7 @@ const validate = (values) => {
   }
 
   if (!values.Gender) {
-    errors.Gender = 'Please select a gender'
+    errors.Gender = 'Please select your gender'
   }
 
   if (!values.toc) {
@@ -52,7 +54,7 @@ const validate = (values) => {
   return errors;
 };
 
-const SignupForm = () => {
+const SignupForm = (props) => {
   const formik = useFormik({
     initialValues: {
       Username: "",
@@ -67,6 +69,7 @@ const SignupForm = () => {
 
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+      props.func(values);
     },
   });
 
