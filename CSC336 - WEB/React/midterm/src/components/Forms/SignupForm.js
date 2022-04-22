@@ -1,64 +1,79 @@
 import React from "react";
 import { useFormik } from "formik";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom"
 
 const validate = (values) => {
   const errors = {};
 
   if (!values.Username) {
     errors.Username = "Required";
-  // } else if (values.Username.length > 15) {
-  //   errors.Username = "Must be 15 characters or less";
+    // } else if (values.Username.length > 15) {
+    //   errors.Username = "Must be 15 characters or less";
   } else if (/\W/.test(values.Username)) {
-    errors.Username = "Username must not contain numbers or symbols"
+    errors.Username = "Username must not contain numbers or symbols";
   }
 
   if (!values.Password) {
     errors.Password = "Required";
-  } else if (
-    !/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/i.test(
-      values.Password
-    )
-  ) {
+  } else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/i.test(values.Password)) {
     errors.Password = "Invalid Password";
   }
 
+  if (!values.Email) {
+    errors.Email = 'Required';
+
+  } else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d][\D]{8,12}$/i.test(values.Email) && (values.Email.length > 7 && values.Email.length < 13)) {
+
+    errors.Email = 'Invalid email address';
+
+  } else {
+    console.log('email', values.Email, !/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/i.test(values.Email))
+  }
+
   if (!values.Image) {
-    errors.Image = 'Required';
+    errors.Image = "Required";
   }
 
   if (!values.AgeGroup) {
-    errors.AgeGroup = 'Required'
-  } else if (/\D/.test(values.AgeGroup)){
-    errors.AgeGroup = 'Age Group should be an integer'
+    errors.AgeGroup = "Required";
+  } else if (/\D/.test(values.AgeGroup)) {
+    errors.AgeGroup = "Age Group should be an integer";
   }
 
   if (!values.Gender) {
-    errors.Gender = 'Please select your gender'
+    errors.Gender = "Please select your gender";
   }
 
   if (!values.toc) {
-    errors.toc = 'Please accept the Terms & Conditions'
+    errors.toc = "Please accept the Terms & Conditions";
   }
 
-  console.log(errors, Object.keys(errors).length)
+  console.log(errors, Object.keys(errors).length);
   if (Object.keys(errors).length > 0) {
-    console.log('true cond', document.getElementById('submit-button').disabled)
-    document.getElementById('submit-button').disabled = true
-  }
-  else{
-    console.log('false cond', document.getElementById('submit-button').disabled)
-    document.getElementById('submit-button').removeAttribute('disabled')
+    // console.log("true cond", document.getElementById("submit-button").disabled);
+    document.getElementById("submit-button").disabled = true;
+  } else {
+    // console.log(
+    //   "false cond",
+    //   document.getElementById("submit-button").disabled
+    // );
+    document.getElementById("submit-button").removeAttribute("disabled");
   }
 
   return errors;
 };
 
 const SignupForm = (props) => {
+
+  const navigate = useNavigate();
+
   const formik = useFormik({
     initialValues: {
       Username: "",
       Password: "",
+      Email: "",
       Image: "",
       AgeGroup: [],
       Gender: "",
@@ -69,14 +84,17 @@ const SignupForm = (props) => {
 
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
-      props.func(values);
+      // <Link to={{pathname: '/dashboard', state:values}} ></Link>
+      // props.func(values);
+      navigate('/dashboard', { state: values })
+      // props.history.push("/dashboard", { state: values });
     },
   });
 
   return (
     <div>
       <Card className="bg-nord px-5 mx-5 my-5 py-3">
-        <Card.Title className="text-nord-main mb-4">Sign Up</Card.Title>
+        <Card.Title className="text-nord-main mb-4">Register</Card.Title>
         <form onSubmit={formik.handleSubmit}>
           {/* 2 column grid layout with text inputs for the Username and Password */}
           <div className="row mb-4">
@@ -112,12 +130,31 @@ const SignupForm = (props) => {
             </div>
           </div>
 
+          {/* Extra Text Field */}
+          <div className="row mb-4">
+            <div className="col">
+              <div className="form-outline">
+                <input
+                  type="text"
+                  id="Email"
+                  className="form-control text-nord-input"
+                  placeholder="Email"
+                  onChange={formik.handleChange}
+                  value={formik.values.Email}
+                />
+                {formik.errors.Email ? (
+                  <div className="text-nord11">{formik.errors.Email}</div>
+                ) : null}
+              </div>
+            </div>
+          </div>
+
           {/* File */}
           <div className="input-group mb-3">
             <input
               type="file"
               className="form-control"
-              accept="image/*"
+              accept="image/png"
               id="Image"
               onChange={formik.handleChange}
               value={formik.values.Image}
@@ -125,7 +162,9 @@ const SignupForm = (props) => {
             <label className="input-group-text" htmlFor="Image">
               Upload Image
             </label>
-            {formik.errors.Image ? <div className="text-nord11">{formik.errors.Image}</div> : null}
+            {formik.errors.Image ? (
+              <div className="text-nord11">{formik.errors.Image}</div>
+            ) : null}
           </div>
 
           {/* Select */}
@@ -146,7 +185,9 @@ const SignupForm = (props) => {
               <option value={60}>Sixties</option>
               <option value={70}>Seventies</option>
             </select>
-            {formik.errors.AgeGroup ? <div className="text-nord11">{formik.errors.AgeGroup}</div> : null}
+            {formik.errors.AgeGroup ? (
+              <div className="text-nord11">{formik.errors.AgeGroup}</div>
+            ) : null}
           </div>
 
           {/* Radios */}
@@ -182,7 +223,9 @@ const SignupForm = (props) => {
               >
                 Female
               </label>
-              {formik.errors.Gender ? <div className="text-nord11">{formik.errors.Gender}</div> : null}
+              {formik.errors.Gender ? (
+                <div className="text-nord11">{formik.errors.Gender}</div>
+              ) : null}
             </div>
           </div>
 
@@ -198,10 +241,16 @@ const SignupForm = (props) => {
             <label className="form-check-label text-nord-main" htmlFor="toc">
               I have read the terms and conditions
             </label>
-            {formik.errors.toc ? <div className="text-nord11">{formik.errors.toc}</div> : null}
+            {formik.errors.toc ? (
+              <div className="text-nord11">{formik.errors.toc}</div>
+            ) : null}
           </div>
 
-          <button type="submit" className="btn btn-nord btn-block mb-4" id="submit-button">
+          <button
+            type="submit"
+            ClassName="btn btn-nord btn-block mb-4"
+            id="submit-button"
+          >
             Sign up
           </button>
         </form>
