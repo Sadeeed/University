@@ -4,6 +4,7 @@ import './App.css';
 // import Layout from './Layout';
 // import AddRemoveTable from './AddRemoveTable';
 import LoginForm from './LoginForm';
+import SlidingNav from './SlidingNav';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <SearchButton/> */}
       {/* <Layout /> */}
       {/* <AddRemoveTable></AddRemoveTable> */}
-      <LoginForm/>
+      {/* <LoginForm/> */}
+      <SlidingNav></SlidingNav>
     </div>
   );
 }
