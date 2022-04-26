@@ -248,7 +248,7 @@ const SignupForm = (props) => {
 
           <button
             type="submit"
-            className="btn btn-nord btn-block mb-4"
+            className="btn btn-nord mb-4"
             id="submit-button"
           >
             Sign up
