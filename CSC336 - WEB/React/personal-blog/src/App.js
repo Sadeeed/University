@@ -1,8 +1,9 @@
-// import { Outlet } from "react-router-dom";
+// import logo from './logo.svg';
+import './App.css';
+import 'bootstrap'
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LandingPage from "./components/LandingPage/LandingPage";
-import './index.css'
 
 function App() {
   return (

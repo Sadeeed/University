@@ -1,10 +1,12 @@
 function Footer(props) {
   return (
-    <footer className="bg-light text-center text-lg-start">
-      <div className="text-center p-3" style={{ backgroundColor: "#202020" }}>
-        <a className="text-light" href="https://www.sadeeed.github.io">
-          Sadeed
+    <footer className="text-center">
+      <div className="text-center p-3">
+        <span className="text-nord-muted">© 2022 by </span>
+        <a className="text-nord-main" href="https://www.sadeeed.github.io">
+          Sadeed.
         </a>
+        <span className="text-nord-muted"> All rights reserved. </span>
       </div>
     </footer>
   );

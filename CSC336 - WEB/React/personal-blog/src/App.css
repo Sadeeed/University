@@ -1,0 +1,57 @@
+@import "/node_modules/nord/src/nord.css";
+
+.App {
+  text-align: center;
+  background-color: rgb(36, 41, 51);
+  min-height: 100vh;
+  height: 100%;
+  color: var(--nord6) !important;
+}
+
+.bg-yt {
+  background-color: #202020;
+}
+
+.bg-nord {
+  background-color: var(--nord0) !important;
+}
+
+.text-nord-muted {
+  color: var(--nord3) !important;
+}
+
+.text-nord-main {
+  color: var(--nord6) !important;
+}
+
+.text-nord-input {
+  color: var(--nord1) !important;
+}
+
+.text-nord4 {
+  color: var(--nord4) !important;
+}
+
+.text-nord11 {
+  color: var(--nord11) !important;
+}
+
+.btn-nord {
+  background-color: var(--nord9) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--nord10) !important;
+}
+
+footer {
+  background-color: rgb(36, 41, 51);
+  position: absolute;
+  bottom: -10;
+  /* margin-bottom: 0%; */
+  width:100%;
+}
