@@ -20,7 +20,7 @@ class LandingPage extends Component {
           <h2>Recent Posts</h2>
           <Row xs={1} md={2} className="g-0">
             {this.state.posts.map((post) => (
-              <Col>
+              <Col className="d-flex">
                 <PostCard
                   title={post.fields.title}
                   author={post.fields.author}

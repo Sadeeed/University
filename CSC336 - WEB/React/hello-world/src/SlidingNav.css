@@ -42,7 +42,6 @@ nav #marker {
     position: absolute;
     left: 0;
     height: 32px;
-    /* width: 100%; */
     width: 4px;
     background: lightcoral;
     bottom: 7px;

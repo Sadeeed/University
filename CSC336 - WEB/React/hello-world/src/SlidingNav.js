@@ -9,7 +9,7 @@ function SlidingNav() {
         marker.style.left = (e.offsetLeft - 20) +"px"
 
         // Horizontal Underline
-        // marker.style.left = (e.offsetLeft - 20) +"px"
+        // marker.style.left = e.offsetLeft +"px"
         // uncomment to cover full width
         // marker.style.width = e.offsetWidth+"px" 
     }
