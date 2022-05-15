@@ -5,19 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import SignUp from "./components/SignUpPage/SignUp";
-import NotFound from "./components/NotFound/NotFound";
-import Dashboard from "./components/Dashboard/Dashboard";
+// import 'bootstrap-icons/font/bootstrap-icons.css';
+// import SignUp from "./components/SignUpPage/SignUp";
+// import NotFound from "./components/NotFound/NotFound";
+// import Dashboard from "./components/Dashboard/Dashboard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route index element={<App />} />
-      <Route path="/register" element={<SignUp />} />
+      {/* <Route path="/register" element={<SignUp />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} /> */}
     </Routes>
   </BrowserRouter>
 );

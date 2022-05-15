@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-import SignupForm from "../Forms/SignupForm";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import SignupForm from "../../components/Forms/SignupForm";
 
 class SignUp extends Component {
   state = {};
