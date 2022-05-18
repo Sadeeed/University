@@ -2,20 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import SignUp from "./components/SignUpPage/SignUp";
-// import NotFound from "./components/NotFound/NotFound";
-// import Dashboard from "./components/Dashboard/Dashboard";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route index element={<App />} />
-      {/* <Route path="/register" element={<SignUp />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="*" element={<NotFound />} /> */}
-    </Routes>
+    <App />
   </BrowserRouter>
 );
 
