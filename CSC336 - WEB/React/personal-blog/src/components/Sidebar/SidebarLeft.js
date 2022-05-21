@@ -4,12 +4,15 @@ import {
   BrandTwitter,
   Home,
   Language,
-  Link,
   Search,
   ToggleLeft,
   ToggleRight,
   User,
 } from "tabler-icons-react";
+
+import {default as TablerLink} from 'tabler-icons-react/dist/icons/link'
+
+import { Link } from "react-router-dom";
 
 import default_avatar from '../../assets/images/avatar_default.png'
 
@@ -28,7 +31,7 @@ const SidebarLeft = (props) => {
       </button>
       <header>
         <figure className="site-avatar">
-          <a href="/">
+          <Link to="/">
             <img
               src={default_avatar}
               className="site-logo"
@@ -37,12 +40,12 @@ const SidebarLeft = (props) => {
               width={300}
               height={300}
             />
-          </a>
+          </Link>
           <span className="emoji">🍥</span>
         </figure>
         <div className="site-meta">
           <h1 className="site-name">
-            <a href="/">Example Site</a>
+            <Link to="/">Example Site</Link>
           </h1>
           <h2 className="site-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -51,50 +54,50 @@ const SidebarLeft = (props) => {
       </header>
       <ol className="social-menu">
         <li>
-          <a
-            href="https://github.com/CaiJimmy/hugo-theme-stack"
+          <Link
+            to="https://github.com/CaiJimmy/hugo-theme-stack"
             target="_blank"
             title="GitHub"
           >
             <BrandGithub size={24} strokeWidth={2} />
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://twitter.com" target="_blank" title="Twitter">
+          <Link to="https://twitter.com" target="_blank" title="Twitter">
             <BrandTwitter size={24} strokeWidth={2} />
-          </a>
+          </Link>
         </li>
       </ol>
       <ol className="menu" id="main-menu">
         <li className="current">
-          <a href="/">
+          <Link to="/">
             <Home size={24} strokeWidth={2} />
             <span>Home</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about/">
+          <Link to="/about/">
             <User size={24} strokeWidth={2} />
             <span>About</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/archives/">
+          <Link to="/archives/">
             <Archive size={24} strokeWidth={2} />
             <span>Archives</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/search/">
+          <Link to="/search/">
             <Search size={24} strokeWidth={2} />
             <span>Search</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/links/">
-            <Link size={24} strokeWidth={2} />
+          <Link to="/links/">
+            <TablerLink size={24} strokeWidth={2} />
             <span>Links</span>
-          </a>
+          </Link>
         </li>
         <div className="menu-bottom-section">
           <li id="i18n-switch">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CalendarTime, Clock, Copyright } from "tabler-icons-react";
 
 const MainArticle = (props) => {
@@ -7,7 +8,7 @@ const MainArticle = (props) => {
         <div className="article-details">
           <div className="article-title-wrapper">
             <h2 className="article-title">
-              <a href="/about/">About</a>
+              <Link to="/about/">About</Link>
             </h2>
             <h3 className="article-subtitle">
               Hugo, the world's fastest framework for building websites
@@ -29,14 +30,14 @@ const MainArticle = (props) => {
         <p>
           Written in Go, Hugo is an open source static site generator available
           under the
-          <a
+          <Link
             className="link"
-            href="https://github.com/gohugoio/hugo/blob/master/LICENSE"
+            to="https://github.com/gohugoio/hugo/blob/master/LICENSE"
             target="_blank"
             rel="noopener"
           >
             Apache Licence 2.0.
-          </a>
+          </Link>
           Hugo supports TOML, YAML and JSON data file types, Markdown and HTML
           content files and uses shortcodes to add rich content. Other notable
           features are taxonomies, multilingual mode, image processing, custom
@@ -46,54 +47,54 @@ const MainArticle = (props) => {
         <p>Hugo makes use of a variety of open source projects including:</p>
         <ul>
           <li>
-            <a
+            <Link
               className="link"
-              href="https://github.com/yuin/goldmark"
+              to="https://github.com/yuin/goldmark"
               target="_blank"
               rel="noopener"
             >
               https://github.com/yuin/goldmark
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="link"
-              href="https://github.com/alecthomas/chroma"
+              to="https://github.com/alecthomas/chroma"
               target="_blank"
               rel="noopener"
             >
               https://github.com/alecthomas/chroma
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="link"
-              href="https://github.com/muesli/smartcrop"
+              to="https://github.com/muesli/smartcrop"
               target="_blank"
               rel="noopener"
             >
               https://github.com/muesli/smartcrop
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="link"
-              href="https://github.com/spf13/cobra"
+              to="https://github.com/spf13/cobra"
               target="_blank"
               rel="noopener"
             >
               https://github.com/spf13/cobra
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="link"
-              href="https://github.com/spf13/viper"
+              to="https://github.com/spf13/viper"
               target="_blank"
               rel="noopener"
             >
               https://github.com/spf13/viper
-            </a>
+            </Link>
           </li>
         </ul>
         <p>
@@ -113,14 +114,14 @@ const MainArticle = (props) => {
         </p>
         <p>
           Learn more and contribute on
-          <a
+          <Link
             className="link"
-            href="https://github.com/gohugoio"
+            to="https://github.com/gohugoio"
             target="_blank"
             rel="noopener"
           >
             GitHub
-          </a>
+          </Link>
           .
         </p>
       </section>
