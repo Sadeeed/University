@@ -1,138 +1,122 @@
 import { Link } from "react-router-dom";
-import { CalendarTime, Clock, Copyright } from "tabler-icons-react";
+import { CalendarTime, Clock, Copyright, Language } from "tabler-icons-react";
+import c1 from "../../assets/images/card-header.jpg";
 
 const MainArticle = (props) => {
   return (
-    <article className="main-article">
+    <article className="has-image main-article">
       <header className="article-header">
+        <div className="article-image">
+          <Link to="/p/placeholder-text/">
+            <img src={c1} alt="" width={800} height={533} />
+          </Link>
+        </div>
         <div className="article-details">
+          <header className="article-category">
+            <Link
+              to="/categories/test/"
+              style={{ backgroundColor: "#2a9d8f", color: "#fff" }}
+            >
+              Test
+            </Link>
+            <Link to="/categories/test-with-whitespaces/">
+              Test with whitespaces
+            </Link>
+          </header>
           <div className="article-title-wrapper">
             <h2 className="article-title">
-              <Link to="/about/">About</Link>
+              <Link to="/p/placeholder-text/">Placeholder Text</Link>
             </h2>
-            <h3 className="article-subtitle">
-              Hugo, the world's fastest framework for building websites
-            </h3>
+            <h3 className="article-subtitle">Lorem Ipsum Dolor Si Amet</h3>
           </div>
           <footer className="article-time">
             <div>
               <CalendarTime size={24} strokeWidth={2} />
-              <time className="article-time--published">Feb 28, 2019</time>
+              <time className="article-time--published">Mar 09, 2019</time>
             </div>
             <div>
               <Clock size={24} strokeWidth={2} />
-              <time className="article-time--reading">1 minute read</time>
+              <time className="article-time--reading">2 minute read</time>
             </div>
           </footer>
         </div>
       </header>
       <section className="article-content">
+        <p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
         <p>
-          Written in Go, Hugo is an open source static site generator available
-          under the
+          Redit teque digerit hominumque toris verebor lumina non cervice subde
+          tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus
+          nunc caluere tempus inhospita parcite confusaque translucet patri
+          vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque
+          patulos Dryopen deorum.
+        </p>
+        <ol>
+          <li>Exierant elisi ambit vivere dedere</li>
+          <li>Duce pollice</li>
+          <li>Eris modo</li>
+          <li>Spargitque ferrea quos palude</li>
+        </ol>
+        <p>
+          Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine
+          potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt.
+          Atria tractus malis.
+        </p>
+        <ol>
+          <li>Comas hunc haec pietate fetum procerum dixit</li>
+          <li>Post torum vates letum Tiresia</li>
+          <li>Flumen querellas</li>
+          <li>Arcanaque montibus omnes</li>
+          <li>Quidem et</li>
+        </ol>
+        <h1 id="vagus-elidunt">Vagus elidunt</h1>
+        <p></p>
+        <p>
           <Link
             className="link"
-            to="https://github.com/gohugoio/hugo/blob/master/LICENSE"
+            to="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon"
             target="_blank"
             rel="noopener"
           >
-            Apache Licence 2.0.
+            The Van de Graaf Canon
           </Link>
-          Hugo supports TOML, YAML and JSON data file types, Markdown and HTML
-          content files and uses shortcodes to add rich content. Other notable
-          features are taxonomies, multilingual mode, image processing, custom
-          output formats, HTML/CSS/JS minification and support for Sass SCSS
-          workflows.
         </p>
-        <p>Hugo makes use of a variety of open source projects including:</p>
-        <ul>
-          <li>
-            <Link
-              className="link"
-              to="https://github.com/yuin/goldmark"
-              target="_blank"
-              rel="noopener"
-            >
-              https://github.com/yuin/goldmark
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="https://github.com/alecthomas/chroma"
-              target="_blank"
-              rel="noopener"
-            >
-              https://github.com/alecthomas/chroma
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="https://github.com/muesli/smartcrop"
-              target="_blank"
-              rel="noopener"
-            >
-              https://github.com/muesli/smartcrop
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="https://github.com/spf13/cobra"
-              target="_blank"
-              rel="noopener"
-            >
-              https://github.com/spf13/cobra
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="link"
-              to="https://github.com/spf13/viper"
-              target="_blank"
-              rel="noopener"
-            >
-              https://github.com/spf13/viper
-            </Link>
-          </li>
-        </ul>
+        <h2 id="mane-refeci-capiebant-unda-mulcebat">
+          Mane refeci capiebant unda mulcebat
+        </h2>
         <p>
-          Hugo is ideal for blogs, corporate websites, creative portfolios,
-          online magazines, single page applications or even a website with
-          thousands of pages.
+          Victa caducifer, malo vulnere contra dicere aurato, ludit regale,
+          voca! Retorsit colit est profanae esse virescere furit nec; iaculi
+          matertera et visa est, viribus. Divesque creatis, tecta novat
+          collumque vulnus est, parvas. <strong>Faces illo pepulere</strong>{" "}
+          tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo
+          urbis.
         </p>
         <p>
-          Hugo is for people who want to hand code their own website without
-          worrying about setting up complicated runtimes, dependencies and
-          databases.
+          Iubar proles corpore raptos vero auctor imperium; sed et huic: manus
+          caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis
+          linguisque ausus sperare Echionides cornuaque tenent clausit possit.
+          Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat,
+          vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et
+          exercebat, sui et.
         </p>
         <p>
-          Websites built with Hugo are extremelly fast, secure and can be
-          deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and
-          any other hosting provider.
-        </p>
-        <p>
-          Learn more and contribute on
-          <Link
-            className="link"
-            to="https://github.com/gohugoio"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </Link>
-          .
+          Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum
+          cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque
+          alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet
+          illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis
+          facto sic: undique a alios vincula sunt iactata abdita! Suspenderat
+          ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.
         </p>
       </section>
       <footer className="article-footer">
+        <section className="article-tags">
+          <Link to="/tags/markdown/">markdown</Link>
+          <Link to="/tags/text/">text</Link>
+          <Link to="/tags/tag-with-whitespaces/">tag with whitespaces</Link>
+        </section>
         <section className="article-copyright">
           <Copyright size={24} strokeWidth={2} />
-          <span>CC BY-NC-ND</span>
-        </section>
-        <section className="article-lastmod">
-          <Clock size={24} strokeWidth={2} />
-          <span>Last updated on Oct 09, 2020 00:00 UTC</span>
+          <span>Licensed under CC BY-NC-SA 4.0</span>
         </section>
       </footer>
     </article>
