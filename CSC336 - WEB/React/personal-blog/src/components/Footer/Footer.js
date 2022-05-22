@@ -1,28 +1,30 @@
+import { Link } from "react-router-dom";
+
 function Footer(props) {
   return (
     <footer className="site-footer">
-      <section className="copyright">© 2020 - 2022 Example Site</section>
+      <section className="copyright">© 2021 - 2022 Sadeed</section>
       <section className="powerby">
-        Built with{" "}
-        <a href="https://gohugo.io/" target="_blank" rel="noopener">
+        Based on{" "}
+        <Link to="https://gohugo.io/" target="_blank" rel="noopener">
           Hugo
-        </a>{" "}
-        <br />
+        </Link>{" "}
         Theme{" "}
         <b>
-          <a
-            href="https://github.com/CaiJimmy/hugo-theme-stack"
+          <Link
+            to="https://github.com/CaiJimmy/hugo-theme-stack"
             target="_blank"
             rel="noopener"
             data-version="3.11.0"
           >
             Stack
-          </a>
+          </Link>
         </b>{" "}
-        designed by{" "}
-        <a href="https://jimmycai.com" target="_blank" rel="noopener">
-          Jimmy
-        </a>
+        <br/>
+        Ported by{" "}
+        <Link to="https://github.com/Sadeeed" target="_blank" rel="noopener">
+          Sadeed
+        </Link>
       </section>
     </footer>
   );
