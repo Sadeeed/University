@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-import { CalendarTime, Clock, Copyright, Language } from "tabler-icons-react";
+import { CalendarTime, Clock, Copyright } from "tabler-icons-react";
 import c1 from "../../assets/images/card-header.jpg";
 
 const MainArticle = (props) => {
+  function ApproximateReadingTime(text) {
+    const wpm = 225;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    return time;
+  }
+
   return (
     <article className="has-image main-article">
       <header className="article-header">
@@ -25,87 +32,44 @@ const MainArticle = (props) => {
           </header>
           <div className="article-title-wrapper">
             <h2 className="article-title">
-              <Link to="/p/placeholder-text/">Placeholder Text</Link>
+              <Link to="/p/placeholder-text/">{props.title}</Link>
             </h2>
-            <h3 className="article-subtitle">Lorem Ipsum Dolor Si Amet</h3>
+            <h3 className="article-subtitle">{props.subtitle}</h3>
           </div>
           <footer className="article-time">
             <div>
               <CalendarTime size={24} strokeWidth={2} />
-              <time className="article-time--published">Mar 09, 2019</time>
+              <time className="article-time--published">{props.published}</time>
             </div>
             <div>
               <Clock size={24} strokeWidth={2} />
-              <time className="article-time--reading">2 minute read</time>
+              <time className="article-time--reading">
+                {ApproximateReadingTime(props.content)} minute read
+              </time>
             </div>
           </footer>
         </div>
       </header>
       <section className="article-content">
-        <p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+        <h1>Hello World</h1>
         <p>
-          Redit teque digerit hominumque toris verebor lumina non cervice subde
-          tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus
-          nunc caluere tempus inhospita parcite confusaque translucet patri
-          vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque
-          patulos Dryopen deorum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum
+          ligula et lacinia vestibulum. Quisque nec libero elit. Curabitur
+          rhoncus finibus ipsum, ac pharetra nunc fringilla ac. Etiam eget enim
+          et arcu ornare scelerisque ut quis dolor. Mauris vitae euismod ipsum,
+          quis dictum tortor. Integer accumsan, metus et consectetur
+          scelerisque, leo odio malesuada lorem, a tempor lectus leo eu enim.
+          Nullam consectetur cursus turpis, id placerat dolor vulputate in.{" "}
         </p>
-        <ol>
-          <li>Exierant elisi ambit vivere dedere</li>
-          <li>Duce pollice</li>
-          <li>Eris modo</li>
-          <li>Spargitque ferrea quos palude</li>
-        </ol>
+        <h2>Another Paragraph</h2>
         <p>
-          Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine
-          potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt.
-          Atria tractus malis.
-        </p>
-        <ol>
-          <li>Comas hunc haec pietate fetum procerum dixit</li>
-          <li>Post torum vates letum Tiresia</li>
-          <li>Flumen querellas</li>
-          <li>Arcanaque montibus omnes</li>
-          <li>Quidem et</li>
-        </ol>
-        <h1 id="vagus-elidunt">Vagus elidunt</h1>
-        <p></p>
-        <p>
-          <Link
-            className="link"
-            to="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon"
-            target="_blank"
-            rel="noopener"
-          >
-            The Van de Graaf Canon
-          </Link>
-        </p>
-        <h2 id="mane-refeci-capiebant-unda-mulcebat">
-          Mane refeci capiebant unda mulcebat
-        </h2>
-        <p>
-          Victa caducifer, malo vulnere contra dicere aurato, ludit regale,
-          voca! Retorsit colit est profanae esse virescere furit nec; iaculi
-          matertera et visa est, viribus. Divesque creatis, tecta novat
-          collumque vulnus est, parvas. <strong>Faces illo pepulere</strong>{" "}
-          tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo
-          urbis.
-        </p>
-        <p>
-          Iubar proles corpore raptos vero auctor imperium; sed et huic: manus
-          caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis
-          linguisque ausus sperare Echionides cornuaque tenent clausit possit.
-          Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat,
-          vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et
-          exercebat, sui et.
-        </p>
-        <p>
-          Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum
-          cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque
-          alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet
-          illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis
-          facto sic: undique a alios vincula sunt iactata abdita! Suspenderat
-          ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum
+          ligula et lacinia vestibulum. Quisque nec libero elit. Curabitur
+          rhoncus finibus ipsum, ac pharetra nunc fringilla ac. Etiam eget enim
+          et arcu ornare scelerisque ut quis dolor. Mauris vitae euismod ipsum,
+          quis dictum tortor. Integer accumsan, metus et consectetur
+          scelerisque, leo odio malesuada lorem, a tempor lectus leo eu enim.
+          Nullam consectetur cursus turpis, id placerat dolor vulputate in.
         </p>
       </section>
       <footer className="article-footer">
