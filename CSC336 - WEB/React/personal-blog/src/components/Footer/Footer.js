@@ -1,30 +1,28 @@
-import { Link } from "react-router-dom";
-
 function Footer(props) {
   return (
     <footer className="site-footer">
       <section className="copyright">© 2021 - 2022 Sadeed</section>
       <section className="powerby">
         Based on{" "}
-        <Link to="https://gohugo.io/" target="_blank" rel="noopener">
+        <a href="https://gohugo.io/" target="_blank" rel="noreferrer">
           Hugo
-        </Link>{" "}
+        </a>{" "}
         Theme{" "}
         <b>
-          <Link
-            to="https://github.com/CaiJimmy/hugo-theme-stack"
+          <a
+            href="https://github.com/CaiJimmy/hugo-theme-stack"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             data-version="3.11.0"
           >
             Stack
-          </Link>
+          </a>
         </b>{" "}
         <br/>
         Ported by{" "}
-        <Link to="https://github.com/Sadeeed" target="_blank" rel="noopener">
+        <a href="https://github.com/Sadeeed" target="_blank" rel="noreferrer">
           Sadeed
-        </Link>
+        </a>
       </section>
     </footer>
   );

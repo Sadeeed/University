@@ -10,11 +10,11 @@ import {
   User,
 } from "tabler-icons-react";
 
-import {default as TablerLink} from 'tabler-icons-react/dist/icons/link'
+import { default as TablerLink } from "tabler-icons-react/dist/icons/link";
 
 import { Link } from "react-router-dom";
 
-import default_avatar from '../../assets/images/avatar_default.png'
+import default_avatar from "../../assets/images/avatar_default.png";
 
 const SidebarLeft = (props) => {
   return (
@@ -54,18 +54,24 @@ const SidebarLeft = (props) => {
       </header>
       <ol className="social-menu">
         <li>
-          <Link
-            to="https://github.com/CaiJimmy/hugo-theme-stack"
+          <a
+            href="https://github.com/Sadeeed"
             target="_blank"
             title="GitHub"
+            rel="noreferrer"
           >
             <BrandGithub size={24} strokeWidth={2} />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="https://twitter.com" target="_blank" title="Twitter">
+          <a
+            href="https://twitter.com/icesoop"
+            target="_blank"
+            title="Twitter"
+            rel="noreferrer"
+          >
             <BrandTwitter size={24} strokeWidth={2} />
-          </Link>
+          </a>
         </li>
       </ol>
       <ol className="menu" id="main-menu">
