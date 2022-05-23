@@ -2,6 +2,7 @@ import {
   Archive,
   BrandGithub,
   BrandTwitter,
+  Edit,
   Home,
   Language,
   Search,
@@ -106,7 +107,7 @@ const SidebarLeft = (props) => {
           </Link>
         </li>
         <div className="menu-bottom-section">
-          <li id="i18n-switch">
+          {/* <li id="i18n-switch">
             <Language size={24} strokeWidth={2} />
             <select
               name="language"
@@ -118,7 +119,7 @@ const SidebarLeft = (props) => {
               <option value="http://localhost:1313/zh-cn/">中文</option>
               <option value="http://localhost:1313/ar/">عربي</option>
             </select>
-          </li>
+          </li> */}
           <li id="dark-mode-toggle">
             <ToggleLeft size={24} strokeWidth={2} />
             <ToggleRight size={24} strokeWidth={2} />
