@@ -2117,3 +2117,36 @@ a.link:hover {
 .section-title a {
   color: var(--body-text-color);
 }
+
+/* Extra Third Party Component Styles */
+
+/* .wmde-markdown-var .w-md-editor .w-md-editor-show-edit {
+  height: 360px !important;
+} */
+
+.w-md-editor {
+  background-color: var(--card-background) !important;
+  font-family: var(--article-font-family) !important;
+  color: var(--card-text-color-main) !important;
+}
+
+.wmde-markdown {
+  background-color: var(--card-background) !important;
+  font-family: var(--article-font-family) !important;
+  color: var(--card-text-color-main) !important;
+}
+
+.submit-button {
+  color: var(--card-text-color-main) !important;
+  background-color: #8ea885 !important;
+  padding: 8px 16px !important;
+  border-radius: var(--tag-border-radius) !important;
+  display: inline-block !important;
+  font-size: 1.4rem !important;
+  width: 80px !important;
+
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}

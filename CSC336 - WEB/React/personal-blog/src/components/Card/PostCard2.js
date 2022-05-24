@@ -3,11 +3,14 @@ import { CalendarTime, Clock } from "tabler-icons-react";
 import c1 from "../../assets/images/card-header.jpg";
 
 const PostCard2 = (props) => {
+
+  const post_link = `/p/${props.slug}/`
+
   return (
     <article className="has-image">
       <header className="article-header">
         <div className="article-image">
-          <Link to="/p/markdown-syntax-guide/">
+          <Link to={post_link} state={props.data}>
             <img src={c1} alt="alt text" width={800} height={534} />
           </Link>
         </div>
@@ -18,10 +21,10 @@ const PostCard2 = (props) => {
           </header>
           <div className="article-title-wrapper">
             <h2 className="article-title">
-              <Link to="/p/markdown-syntax-guide/">{props.title}</Link>
+              <Link to={post_link} state={props.data}>{props.title}</Link>
             </h2>
             <h3 className="article-subtitle">
-                {props.content}
+                {props.subtitle}
             </h3>
           </div>
           <footer className="article-time">

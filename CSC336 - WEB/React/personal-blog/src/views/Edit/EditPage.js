@@ -1,14 +1,37 @@
-import { useCallback } from "react";
-import { Wysimark, useEditor } from "@wysimark/react";
+import { useState } from "react";
+import MDEditor from "@uiw/react-md-editor";
+import rehypeSanitize from "rehype-sanitize";
+import Footer from "../../components/Footer/Footer";
+import SidebarLeft from "../../components/Sidebar/SidebarLeft";
 
-const EditPage = () => {
-  const editor = useEditor({ initialMarkdown: "# Hamburgers" });
-  const onClick = useCallback(() => alert(editor.getMarkdown()), []);
+const EditPage = (props) => {
+  const [value, setValue] = useState("**Hello world!!!**");
 
   return (
-    <div>
-      <Wysimark editor={editor} />
-      <button onClick={onClick}>Show Markdown</button>
+    <div className="container main-container flex on-phone--column extended">
+      <SidebarLeft />
+      <main className="main full-width">
+        <MDEditor
+          visiableDragbar={false}
+          height={300}
+          preview={"edit"}
+          value={value}
+          onChange={setValue}
+          previewOptions={{
+            rehypePlugins: [[rehypeSanitize]],
+          }}
+        />
+        <button
+          type="button"
+          className="submit-button"
+          onClick={() => {
+            alert(value);
+          }}
+        >
+          Submit
+        </button>
+        <Footer />
+      </main>
     </div>
   );
 };
