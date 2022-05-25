@@ -3,9 +3,17 @@ import MDEditor from "@uiw/react-md-editor";
 import rehypeSanitize from "rehype-sanitize";
 import Footer from "../../components/Footer/Footer";
 import SidebarLeft from "../../components/Sidebar/SidebarLeft";
+import Button from "../../components/Buttons/Button";
+import { useLocation } from "react-router-dom";
 
 const EditPage = (props) => {
-  const [value, setValue] = useState("**Hello world!!!**");
+  const location = useLocation();
+  const article = location.state;
+  const [value, setValue] = useState(article.subtitle);
+
+  function handleOnClick() {
+    alert(value);
+  }
 
   return (
     <div className="container main-container flex on-phone--column extended">
@@ -21,15 +29,11 @@ const EditPage = (props) => {
             rehypePlugins: [[rehypeSanitize]],
           }}
         />
-        <button
-          type="button"
-          className="submit-button"
-          onClick={() => {
-            alert(value);
-          }}
-        >
-          Submit
-        </button>
+        <Button
+          buttonText="Submit"
+          handleOnClick={handleOnClick}
+          type="submit"
+        />
         <Footer />
       </main>
     </div>

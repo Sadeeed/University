@@ -7,17 +7,16 @@ import SidebarRight from "../../components/Sidebar/SidebarRight";
 import { posts } from "../../assets/js/posts";
 
 const LandingPage = () => {
-
-  const [article, setArticle] = useState(posts)
+  const [article, setArticle] = useState(posts);
 
   return (
     <div className="container main-container flex on-phone--column extended">
       <SidebarLeft />
       <main className="main full-width">
-        <ArticleList article={article}/>
+        <ArticleList article={article} />
         <Footer />
       </main>
-      <SidebarRight/>
+      <SidebarRight />
     </div>
   );
 };

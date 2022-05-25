@@ -16,7 +16,7 @@ function App() {
       <Route path="/archives" element={<ArchivePage />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/p/:slug" element={<PostPage />} />
-      <Route path="/edit" element={<EditPage />} />
+      <Route path="/e/:slug" element={<EditPage />} />
     </Routes>
   );
 }
