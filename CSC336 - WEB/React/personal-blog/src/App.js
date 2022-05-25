@@ -7,6 +7,8 @@ import EditPage from "./views/Edit/EditPage";
 import LandingPage from "./views/LandingPage/LandingPage";
 import PostPage from "./views/Post/PostPage";
 import SearchPage from "./views/Search/SearchPage";
+import SignUp from "./views/SignUpPage/SignUp"
+import Dashboard from "./views/Dashboard/Dashboard"
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Route path="/search" element={<SearchPage />} />
       <Route path="/p/:slug" element={<PostPage />} />
       <Route path="/e/:slug" element={<EditPage />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 }

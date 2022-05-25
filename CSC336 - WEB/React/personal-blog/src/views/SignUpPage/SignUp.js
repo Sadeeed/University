@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import SignupForm from "../../components/Forms/SignupForm";
+import SidebarLeft from "../../components/Sidebar/SidebarLeft";
 
 class SignUp extends Component {
   state = {};
 
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <SignupForm />
-        <Footer/>
+      <div className="container main-container flex on-phone--column extended">
+        <SidebarLeft />
+        <main className="main full-width">
+          <SignupForm />
+          <Footer />
+        </main>
       </div>
     );
   }

@@ -13,11 +13,23 @@ import {
 
 import { default as TablerLink } from "tabler-icons-react/dist/icons/link";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-import default_avatar from "../../assets/images/avatar_default.png";
+import default_avatar from "../../assets/images/avatars/avatar_default.png";
+import user_avatar from "../../assets/images/avatars/avatar_sadeed.jpg";
+
+
+function toggleDarkMode(){
+  const elmt = document.documentElement
+  const current_theme = elmt.dataset.scheme
+  current_theme === "dark" ? elmt.dataset.scheme = "light" : elmt.dataset.scheme = "dark"
+}
 
 const SidebarLeft = (props) => {
+
+  const location = useLocation()
+  const path = location.pathname
+
   return (
     <aside className="sidebar left-sidebar sticky ">
       <button
@@ -34,7 +46,7 @@ const SidebarLeft = (props) => {
         <figure className="site-avatar">
           <Link to="/">
             <img
-              src={default_avatar}
+              src={user_avatar}
               className="site-logo"
               loading="lazy"
               alt="Avatar"
@@ -46,7 +58,7 @@ const SidebarLeft = (props) => {
         </figure>
         <div className="site-meta">
           <h1 className="site-name">
-            <Link to="/">Example Site</Link>
+            <Link to="/">Sadeed's Blog</Link>
           </h1>
           <h2 className="site-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -76,34 +88,34 @@ const SidebarLeft = (props) => {
         </li>
       </ol>
       <ol className="menu" id="main-menu">
-        <li className="current">
+        <li className={ path === "/" ? "current" : ""}>
           <Link to="/">
             <Home size={24} strokeWidth={2} />
             <span>Home</span>
           </Link>
         </li>
-        <li>
+        <li className={ path === "/about/" ? "current" : ""}>
           <Link to="/about/">
             <User size={24} strokeWidth={2} />
             <span>About</span>
           </Link>
         </li>
-        <li>
+        <li className={ path === "/archives/" ? "current" : ""}>
           <Link to="/archives/">
             <Archive size={24} strokeWidth={2} />
             <span>Archives</span>
           </Link>
         </li>
-        <li>
+        <li className={ path === "/search/" ? "current" : ""}>
           <Link to="/search/">
             <Search size={24} strokeWidth={2} />
             <span>Search</span>
           </Link>
         </li>
-        <li>
-          <Link to="/links/">
+        <li className={ path === "/signup/" ? "current" : ""}>
+          <Link to="/signup/">
             <TablerLink size={24} strokeWidth={2} />
-            <span>Links</span>
+            <span>Signup</span>
           </Link>
         </li>
         <div className="menu-bottom-section">
@@ -120,7 +132,7 @@ const SidebarLeft = (props) => {
               <option value="http://localhost:1313/ar/">عربي</option>
             </select>
           </li> */}
-          <li id="dark-mode-toggle">
+          <li id="dark-mode-toggle" onClick={toggleDarkMode}>
             <ToggleLeft size={24} strokeWidth={2} />
             <ToggleRight size={24} strokeWidth={2} />
             <span>Dark Mode</span>
