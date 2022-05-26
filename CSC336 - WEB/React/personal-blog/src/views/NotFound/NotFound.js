@@ -1,6 +1,6 @@
-import ErrorCard from "../Card/ErrorCard";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import ErrorCard from "../../components/Card/ErrorCard";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 function NotFound() {
   return (

@@ -1,46 +1,42 @@
 export const posts = [
   {
-    fields: {
-      title: "Farenheit 451",
-      author: "icesoup",
-      updatedOn: "2021-09-02T05:02:59.343Z",
-      content:
-        "Guy Montag is a fireman. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hid .... ",
-      createdOn: "2021-08-27T04:21:03.875Z",
-      status: true,
-    },
+    id:1,
+    title: "Farenheit 451",
+    slug: "farenheit-451",
+    author: "icesoup",
+    created: "September 12, 2021",
+    subtitle:
+      "Guy Montag is a fireman. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hid .... ",
+    status: true,
   },
   {
-    fields: {
-      title: "Recursion",
-      author: "sadeed",
-      updatedOn: "2021-09-01T12:33:05.592Z",
-      content:
-        "That's what NYC cop Barry Sutton is learning, as he investigates the devastating phenomenon the media has dubbed False Memory Syndrome—a mysterious affliction that drives its victims mad with ....",
-      createdOn: "2021-08-27T04:21:03.875Z",
-      status: true,
-    },
+    id:2,
+    title: "Recursion",
+    slug: "recursion",
+    author: "sadeed",
+    created: "September 10, 2021",
+    subtitle:
+      "That's what NYC cop Barry Sutton is learning, as he investigates the devastating phenomenon the media has dubbed False Memory Syndrome—a mysterious affliction that drives its victims mad with ....",
+    status: true,
   },
   {
-    fields: {
-      title: "1984",
-      author: "sadeed",
-      updatedOn: "2021-08-26T11:24:29.079Z",
-      content:
-        "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real. Published in 1949, the book offers political ....",
-      createdOn: "2021-08-26T11:24:29.079Z",
-      status: true,
-    },
+    id:3,
+    title: "1984",
+    slug: "1984",
+    author: "sadeed",
+    created: "August 11, 2021",
+    subtitle:
+      "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real. Published in 1949, the book offers political ....",
+    status: true,
   },
   {
-    fields: {
-      title: "Animal Farm",
-      author: "icesoup",
-      updatedOn: "2021-08-31T09:46:11.649Z",
-      content:
-        "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set f ....",
-      createdOn: "2021-08-25T12:24:52.281Z",
-      status: true,
-    },
+    id:4,
+    title: "Animal Farm",
+    slug: "animal-farm",
+    author: "icesoup",
+    created: "August 09, 2021",
+    subtitle:
+      "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set f ....",
+    status: true,
   },
 ];
