@@ -1,15 +1,15 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Link to="/" className="mx-2">Home</Link>
+          <Link to="/products" className="mx-2">Products</Link>
+          <Link to="/services" className="mx-2">Services</Link>
         </Nav>
       </Container>
     </Navbar>
