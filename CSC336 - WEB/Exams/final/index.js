@@ -12,8 +12,7 @@ const port = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const uri =
-  "mongodb://127.0.0.1:27017/final?directConnection=true&serverSelectionTimeoutMS=2000";
+const uri = process.env.DB || "mongodb://127.0.0.1:27017/final?directConnection=true&serverSelectionTimeoutMS=2000";
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
