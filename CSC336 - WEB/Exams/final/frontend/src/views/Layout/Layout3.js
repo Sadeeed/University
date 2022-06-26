@@ -9,10 +9,10 @@ const Layout3 = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Container className="my-3">
         <Row>
           <Col>
-            <Row>
+            <Row className="my-2">
               <Link
                 to="/"
                 onClick={(e) => {
@@ -23,7 +23,7 @@ const Layout3 = () => {
                 Security Services
               </Link>
             </Row>
-            <Row>
+            <Row className="my-2">
               <Link
                 to="/"
                 onClick={(e) => {

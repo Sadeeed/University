@@ -9,10 +9,10 @@ const Layout2 = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Container className="my-3">
         <Row>
           <Col>
-            <Row>
+            <Row className="my-2">
               <Link
                 to="/"
                 onClick={(e) => {
@@ -23,7 +23,7 @@ const Layout2 = () => {
                 Hardware Products
               </Link>
             </Row>
-            <Row>
+            <Row className="my-2">
               <Link
                 to="/"
                 onClick={(e) => {
@@ -34,7 +34,7 @@ const Layout2 = () => {
                 Accessories
               </Link>
             </Row>
-            <Row>
+            <Row className="my-2">
               {" "}
               <Link
                 to="/"
